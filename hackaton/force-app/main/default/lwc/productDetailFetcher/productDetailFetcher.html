@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : Roger Pacheco
+  @group             : 
+  @last modified on  : 04-22-2026
+  @last modified by  : Roger Pacheco
+-->
+<template>
+    <lightning-card title="Product Inventory Checker" icon-name="standard:inventory_work_item">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Check Stock Levels" variant="neutral" onclick={fetchStock}></lightning-button>
+            <template if:true={error}>
+                <p class="slds-text-color_error slds-m-top_small">{error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

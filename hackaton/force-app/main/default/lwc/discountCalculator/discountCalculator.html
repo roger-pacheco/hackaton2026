@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : Roger Pacheco
+  @group             : 
+  @last modified on  : 04-22-2026
+  @last modified by  : Roger Pacheco
+-->
+<template>
+    <lightning-card title="Bulk Discount Calculator" icon-name="standard:price_book_entries">
+        <div class="slds-p-around_medium">
+            <p>Unit Price: $100 | Quantity: 10</p>
+            <p>Applied Discount: 10%</p>
+            <p class="slds-text-heading_medium">Total: <b>{totalPrice}</b></p>
+            <lightning-button label="Calculate Total" onclick={calculate}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
